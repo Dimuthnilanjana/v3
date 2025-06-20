@@ -6,7 +6,7 @@ interface LoaderProps {
 }
 
 const Loadertxt: React.FC<LoaderProps> = ({
-  words = ['buttons', 'forms', 'switches', 'cards', 'buttons'],
+  words = [],
 }) => {
   return (
     <StyledWrapper>
