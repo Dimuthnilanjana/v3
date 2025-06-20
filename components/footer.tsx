@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { FaGithub ,FaLinkedin,FaTwitter } from "react-icons/fa";
 import Link from "next/link"
 
 export function Footer() {
@@ -14,7 +15,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="h-5 w-5" />
+              <FaGithub className="h-5 w-5"/>
             </Link>
             <Link
               href="https://linkedin.com"
@@ -22,7 +23,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="h-5 w-5" />
+              <FaLinkedin className="h-5 w-5" />
             </Link>
             <Link
               href="https://twitter.com"
@@ -30,7 +31,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Twitter className="h-5 w-5" />
+              <FaTwitter  className="h-5 w-5" />
             </Link>
             <Link
               href="mailto:dimuth@example.com"

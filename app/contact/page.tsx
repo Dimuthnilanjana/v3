@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function Contact() {
   const [copied, setCopied] = useState(false)
-  const email = "dimuth.nilanjana@example.com"
+  const email = "dimuth.works@gmail.com"
 
   const copyEmail = async () => {
     try {
