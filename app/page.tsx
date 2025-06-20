@@ -12,7 +12,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl font-bold">hey, dimuth here!</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold">hey, dimuth is here!</h1>
 
               {/* Custom words passed to Loader */}
               <Loadertxt words={['Designer', 'Developer', 'Researcher']} />

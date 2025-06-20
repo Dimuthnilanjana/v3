@@ -7,15 +7,16 @@ import { Moon, Sun, Menu, X, ArrowLeft } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 
+ 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const { theme, setTheme } = useTheme()
   const pathname = usePathname()
 
   const navigation = [
-    { name: "about", href: "/about" },
-    { name: "work", href: "/work" },
-    { name: "contact", href: "/contact" },
+    { name: "About", href: "/about" },
+    { name: "Works", href: "/work" },
+    { name: "Contact", href: "/contact" },
   ]
 
   // Update the back button logic to only show on project detail pages
