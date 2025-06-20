@@ -20,10 +20,10 @@ export default function Home() {
               <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
                 <p>
                   I'm a software engineer with a design-first mindset. I work at{' '}
-                  <Link href="#" className="text-foreground hover:underline">
-                    TechCorp
+                  <Link href="https://www.epictechnology.lk/" className="text-foreground hover:underline">
+                    Epic Lanka
                   </Link>
-                  , LKA. I specialize in React, Node, AWS, and Serverless tech stacks. My career has been focused on
+                  . I specialize in UX/UI Designs, User Researches, Product Engineeirng, and Serverless tech stacks. My career has been focused on
                   developing SaaS products in the FinTech and E-commerce industries.
                 </p>
                 <p>
