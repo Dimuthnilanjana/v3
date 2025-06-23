@@ -9,9 +9,9 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dimuth Nilanjana - Software Engineer",
-  description: "Portfolio of Dimuth Nilanjana, a software engineer specializing in modern web development.",
-    generator: 'v0.dev'
+  title: "Dimuth Nilanjana - UX Engineer",
+  description: "Portfolio of Dimuth Nilanjana, a user expirience engineer specializing in modern solutions.",
+    
 }
 
 export default function RootLayout({

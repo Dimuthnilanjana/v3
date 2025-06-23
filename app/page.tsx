@@ -19,7 +19,7 @@ export default function Home() {
 
               <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a software engineer with a design-first mindset. I work at{' '}
+                  I'm a UX Engineer with a user-first mindset. I work at{' '}
                   <Link href="https://www.epictechnology.lk/" className="text-foreground hover:underline">
                     Epic Lanka
                   </Link>
