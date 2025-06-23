@@ -83,11 +83,35 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
+  			},
+  			'word-spin': {
+  				'0%': {
+  					transform: 'translateY(0%)'
+  				},
+  				'15%': {
+  					transform: 'translateY(-100%)'
+  				},
+  				'30%': {
+  					transform: 'translateY(-100%)'
+  				},
+  				'45%': {
+  					transform: 'translateY(-200%)'
+  				},
+  				'60%': {
+  					transform: 'translateY(-200%)'
+  				},
+  				'75%': {
+  					transform: 'translateY(0%)'
+  				},
+  				'100%': {
+  					transform: 'translateY(0%)'
+  				}
   			}
   		},
   		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-down': 'accordion-down 0.3s ease-out',
+  			'accordion-up': 'accordion-up 0.3s ease-out',
+  			'word-spin': 'word-spin 5s infinite'
   		}
   	}
   },

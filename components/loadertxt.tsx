@@ -1,98 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
 
 interface LoaderProps {
-  words?: string[]
+  words?: string[];
 }
 
-const Loadertxt = () => {
+const LoaderTxt: React.FC<LoaderProps> = ({ words = ['buttons', 'forms', 'switches'] }) => {
   return (
-    <StyledWrapper>
-      <div className="card">
-        <div className="loader">
-          <p>loading</p>
-          <div className="words">
-            <span className="word">buttons</span>
-            <span className="word">forms</span>
-            <span className="word">switches</span>
-          
-          </div>
+    <div className="rounded-[1.25rem]">
+      <div className="flex h-10 rounded-lg text-2xl font-medium text-gray-500 font-['Poppins',sans-serif]">
+        <p>I'm</p>
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-0 z-20 bg-gradient-to-b from-[var(--bg-color)] via-transparent to-[var(--bg-color)] from-10% via-30% to-90%"></div>
+          {words.map((word, index) => (
+            <span 
+              key={index}
+              className="block h-full pl-1.5 text-purple-500 animate-word-spin"
+              style={{
+                animationDelay: `${index * 2}s`
+              }}
+            >
+              {word}
+            </span>
+          ))}
         </div>
       </div>
-    </StyledWrapper>
+    </div>
   );
-}
+};
 
-
-const StyledWrapper = styled.div`
-  .card {
-    // --bg-color: #111;
-    // background-color: var(--bg-color);
-    border-radius: 1.25rem;
-  }
-
-  .loader {
-    color: rgb(124, 124, 124);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    box-sizing: content-box;
-    height: 40px;
-    display: flex;
-    border-radius: 8px;
-  }
-
-  .words {
-    overflow: hidden;
-    position: relative;
-
-  }
-
-  .words::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      var(--bg-color) 10%,
-      transparent 30%,
-      transparent 70%,
-      var(--bg-color) 90%
-    );
-    z-index: 20;
-  }
-
-  .word {
-    display: block;
-    height: 100%;
-    padding-left: 6px;
-    color: #956afa;
-    animation: spin_4991 6s infinite;
-  }
-
-@keyframes spin_4991 {
-  0% {
-    transform: translateY(0%);
-  }
-  15% {
-    transform: translateY(-100%);
-  }
-  30% {
-    transform: translateY(-100%);
-  }
-  45% {
-    transform: translateY(-200%);
-  }
-  60% {
-    transform: translateY(-200%);
-  }
-  75% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-`
-
-export default Loadertxt
+export default LoaderTxt;

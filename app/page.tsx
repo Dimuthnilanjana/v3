@@ -15,7 +15,7 @@ export default function Home() {
               <h1 className="text-3xl sm:text-4xl font-bold">hey, dimuth is here!</h1>
 
               {/* Custom words passed to Loader */}
-              <Loadertxt />
+              <Loadertxt words={['Designer', 'Developer', 'Researcher']} />
 
               <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
                 <p>
