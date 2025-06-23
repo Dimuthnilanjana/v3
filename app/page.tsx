@@ -15,7 +15,7 @@ export default function Home() {
               <h1 className="text-3xl sm:text-4xl font-bold">hey, dimuth is here!</h1>
 
               {/* Custom words passed to Loader */}
-              <Loadertxt words={['Designer', 'Developer', 'Researcher']} />
+              <Loadertxt />
 
               <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
                 <p>
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           {/* Right-side image column */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=200&width=200"
@@ -90,7 +90,7 @@ export default function Home() {
                 className="rounded-xl w-full"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

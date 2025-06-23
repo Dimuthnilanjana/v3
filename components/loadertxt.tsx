@@ -5,26 +5,24 @@ interface LoaderProps {
   words?: string[]
 }
 
-const Loadertxt: React.FC<LoaderProps> = ({
-  words = [],
-}) => {
+const Loadertxt = () => {
   return (
     <StyledWrapper>
       <div className="card">
         <div className="loader">
-          <p>I'm</p>
+          <p>loading</p>
           <div className="words">
-            {words.map((word, index) => (
-              <span key={index} className="word">
-                {word}
-              </span>
-            ))}
+            <span className="word">buttons</span>
+            <span className="word">forms</span>
+            <span className="word">switches</span>
+          
           </div>
         </div>
       </div>
     </StyledWrapper>
-  )
+  );
 }
+
 
 const StyledWrapper = styled.div`
   .card {
