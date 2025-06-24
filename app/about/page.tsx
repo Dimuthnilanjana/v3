@@ -4,23 +4,23 @@ import { TechStack } from "@/components/tech-stack"
 export default function About() {
   const experiences = [
     {
-      company: "TechCorp",
-      position: "Senior Software Engineer",
-      period: "2022 - Present",
+      company: "EPIC LANKA PVT LTD",
+      position: "UI/UX Engineer",
+      period: "2024 JULY - Present",
       current: true,
     },
-    {
-      company: "StartupXYZ",
-      position: "Full Stack Developer",
-      period: "2020 - 2022",
-      current: false,
-    },
-    {
-      company: "WebAgency",
-      position: "Frontend Developer",
-      period: "2018 - 2020",
-      current: false,
-    },
+    // {
+    //   company: "StartupXYZ",
+    //   position: "Full Stack Developer",
+    //   period: "2020 - 2022",
+    //   current: false,
+    // },
+    // {
+    //   company: "WebAgency",
+    //   position: "Frontend Developer",
+    //   period: "2018 - 2020",
+    //   current: false,
+    // },
   ]
 
   return (
@@ -96,7 +96,7 @@ export default function About() {
         </div>
 
         {/* Throwbacks */}
-        <div className="space-y-6">
+        {/* <div className="space-y-6">
           <h2 className="text-xl font-medium">Throwbacks...</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[1, 2].map((n) => (
@@ -121,7 +121,7 @@ export default function About() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Right gutter */}

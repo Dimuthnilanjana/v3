@@ -5,22 +5,10 @@ var tech_stack_1 = require("@/components/tech-stack");
 function About() {
     var experiences = [
         {
-            company: "TechCorp",
-            position: "Senior Software Engineer",
-            period: "2022 - Present",
+            company: "EPIC LANKA PVT LTD",
+            position: "UI/UX Engineer",
+            period: "2024 JULY - Present",
             current: true
-        },
-        {
-            company: "StartupXYZ",
-            position: "Full Stack Developer",
-            period: "2020 - 2022",
-            current: false
-        },
-        {
-            company: "WebAgency",
-            position: "Frontend Developer",
-            period: "2018 - 2020",
-            current: false
         },
     ];
     return (React.createElement("section", { className: "flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-12 py-20" },
@@ -48,15 +36,7 @@ function About() {
                 React.createElement("div", { className: "space-y-6" },
                     React.createElement("div", { className: "gradient-border" },
                         React.createElement("div", { className: "gradient-border-inner" },
-                            React.createElement(tech_stack_1.TechStack, null))))),
-            React.createElement("div", { className: "space-y-6" },
-                React.createElement("h2", { className: "text-xl font-medium" }, "Throwbacks..."),
-                React.createElement("div", { className: "grid md:grid-cols-2 gap-6" }, [1, 2].map(function (n) { return (React.createElement("div", { key: n, className: "space-y-3" },
-                    React.createElement("div", { className: "aspect-video rounded-lg overflow-hidden" },
-                        React.createElement(image_1["default"], { src: "/placeholder.svg?height=200&width=300", alt: "Throwback " + n, width: 300, height: 200, className: "w-full h-full object-cover grayscale" })),
-                    React.createElement("div", { className: "space-y-1" },
-                        React.createElement("p", { className: "text-xs text-muted-foreground" }, n === 1 ? "University days, LK" : "Graduation Ceremony"),
-                        React.createElement("p", { className: "text-xs text-muted-foreground" }, n === 1 ? "#dreamteam #coastalbeauty #tropical" : "#graduation #achievement #milestone")))); })))),
+                            React.createElement(tech_stack_1.TechStack, null)))))),
         React.createElement("div", { className: "hidden lg:block" })));
 }
 exports["default"] = About;
