@@ -5,7 +5,7 @@ exports.metadata = void 0;
 
 var google_1 = require("next/font/google");
 
-require("../../app/globals.css");
+require("../../../app/globals.css");
 
 var theme_provider_1 = require("@/components/theme-provider");
 
