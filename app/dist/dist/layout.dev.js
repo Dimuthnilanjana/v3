@@ -22,3 +22,4 @@
 //                     React.createElement(footer_1.Footer, null))))));
 // }
 // exports["default"] = RootLayout;
+"use strict";
