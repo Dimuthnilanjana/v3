@@ -1,0 +1,55 @@
+"use strict";
+exports.__esModule = true;
+var project_card_1 = require("@/components/project-card");
+function Work() {
+    var projects = [
+        {
+            id: 1,
+            title: "E-Commerce Platform",
+            description: "A modern e-commerce platform built with Next.js, featuring real-time inventory management, payment processing, and admin dashboard.",
+            images: [
+                "/placeholder.svg?height=400&width=600",
+                "/placeholder.svg?height=400&width=600",
+                "/placeholder.svg?height=400&width=600",
+            ],
+            technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+            liveUrl: "https://example.com",
+            githubUrl: "https://github.com"
+        },
+        {
+            id: 2,
+            title: "Task Management App",
+            description: "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking.",
+            images: [
+                "/placeholder.svg?height=400&width=600",
+                "/placeholder.svg?height=400&width=600",
+                "/placeholder.svg?height=400&width=600",
+            ],
+            technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+            liveUrl: "https://example.com",
+            githubUrl: "https://github.com"
+        },
+        {
+            id: 3,
+            title: "Weather Dashboard",
+            description: "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
+            images: [
+                "/placeholder.svg?height=400&width=600",
+                "/placeholder.svg?height=400&width=600",
+                "/placeholder.svg?height=400&width=600",
+            ],
+            technologies: ["Vue.js", "Express", "Weather API", "Chart.js"],
+            liveUrl: "https://example.com",
+            githubUrl: "https://github.com"
+        },
+    ];
+    return (React.createElement("section", { className: "flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-12 py-20" },
+        React.createElement("div", { className: "hidden lg:block" }),
+        React.createElement("div", { className: "w-full max-w-3xl mx-auto space-y-12" },
+            React.createElement("div", { className: "space-y-4" },
+                React.createElement("h1", { className: "text-2xl font-bold" }, "Works"),
+                React.createElement("p", { className: "text-muted-foreground max-w-2xl" }, "Here are some of the projects I've worked on. Each project represents a unique challenge and learning experience.")),
+            React.createElement("div", { className: "grid gap-16" }, projects.map(function (project) { return (React.createElement(project_card_1.ProjectCard, { key: project.id, project: project })); }))),
+        React.createElement("div", { className: "hidden lg:block" })));
+}
+exports["default"] = Work;

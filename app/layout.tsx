@@ -1,4 +1,3 @@
-import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
@@ -10,8 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Dimuth Nilanjana - UX Engineer",
-  description: "Portfolio of Dimuth Nilanjana, a user expirience engineer specializing in modern solutions.",
-    
+  description: "Portfolio of Dimuth Nilanjana, a user experience engineer specializing in modern solutions.",
 }
 
 export default function RootLayout({
@@ -22,10 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <div className="min-h-screen bg-background text-foreground">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen flex-col bg-background text-foreground">
             <Navigation />
-            <main className="pt-16">{children}</main>
+            <main className="flex-1 flex flex-col">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>

@@ -47,26 +47,31 @@ export default function Work() {
   ]
 
   return (
-    <div className="min-h-screen page-transition">
-      <section className="max-w-6xl mx-auto px-32 sm:px-6 lg:px-128 py-16">
-        <div className="space-y-12">
-          {/* Header - smaller like reference */}
-          <div className="space-y-4">
-            <h1 className="text-2xl font-bold">Works</h1>
-            <p className="text-muted-foreground max-w-2xl">
-              Here are some of the projects I've worked on. Each project represents a unique challenge and learning
-              experience.
-            </p>
-          </div>
+    <section className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-12 py-20">
+      {/* Left margin */}
+      <div className="hidden lg:block" />
 
-          {/* Projects Grid */}
-          <div className="grid gap-16">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
+      {/* Middle content */}
+      <div className="w-full max-w-3xl mx-auto space-y-12">
+        {/* Header */}
+        <div className="space-y-4">
+          <h1 className="text-2xl font-bold">Works</h1>
+          <p className="text-muted-foreground max-w-2xl">
+            Here are some of the projects I've worked on. Each project represents a unique challenge and learning
+            experience.
+          </p>
         </div>
-      </section>
-    </div>
+
+        {/* Projects Grid */}
+        <div className="grid gap-16">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      </div>
+
+      {/* Right margin */}
+      <div className="hidden lg:block" />
+    </section>
   )
 }
